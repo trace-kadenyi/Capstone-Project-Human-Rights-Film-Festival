@@ -175,7 +175,8 @@
     text-align: center;
     margin-top: 30px;
     font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.15rem;
+    color: rgb(42, 41, 41);
 }
 .speaker-segment {
     margin: 50px auto;
@@ -198,4 +199,12 @@
     width: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.partner-heading {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 0.25rem;
+    color: grey;
 }
