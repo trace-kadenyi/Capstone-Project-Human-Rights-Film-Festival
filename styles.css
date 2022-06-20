@@ -72,6 +72,7 @@
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing: 0.25rem;
 }
+
 .under-line {
     border: 1px rgb(239, 81, 60) solid;
     width: 60px;
@@ -83,8 +84,9 @@
 }
 .program-activities li {
     color: white;
-    background-color: #9e9c9c50;
+    background-color: #78767650;
     margin: 10px;
+    padding: 3px;
     display: grid;
     grid-template-columns: 15% 30% 55%;
     min-height: 100px;
@@ -114,6 +116,7 @@
 .whole-program a {
     color: white;
 }
+/* Partners' Section */
 .partner-sect {
     background-color: rgb(44, 41, 41);
     min-height: 200px;
@@ -136,6 +139,7 @@
 .last-img {
     margin-bottom: 15px;
 }
+/* Footer Section */
 .footer-sect {
     min-height: 120px;
     align-items: center;
@@ -147,7 +151,51 @@
 }
 
 .footer-content {
-    float: right;
+  float: right;
   width: 60%;
   margin-top: 20px;
+}
+/* Featured Section */
+.speaker-image img {
+    width: 120px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 150px;
+}
+.speaker-image {
+    background-image: url('./assets/images/box-pattern.webp');
+    background-position: top left;
+    background-size: 170px;
+    width: 110px;
+    height: 90px;
+    margin-left: 5px;
+}
+.featured-heading {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 0.05rem;
+}
+.speaker-segment {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-family: 'Nanum Gothic', sans-serif;
+    max-width: 500px;
+}
+
+.title {
+    color: rgb(255, 79, 56);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.speaker-profile {
+    padding-right: 5px;
+}
+.feature-line {
+    width: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
