@@ -1,1 +1,1 @@
-My Capstone Project - Human Rights Film Festival
+My Capstone Project - International Human Rights Film Festival
