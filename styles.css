@@ -181,7 +181,6 @@ footer {
 .footer-content {
   margin-top: 20px;
   align-self: flex-start;
-  font-size: 14px;
 }
 
 /* Featured Section */
@@ -271,10 +270,6 @@ footer {
     line-height: 1.5rem;
     text-align: center;
     font-weight: normal;
-    font-size: 14px;
-}
-.contact-us {
-    font-size: 14px;
 }
 .desktop-intro-about {
     display: none;
@@ -298,7 +293,6 @@ footer {
 }
 .email {
     font-weight: bold;
-    font-size: 12px;
 }
 .past-acts {
     margin: 10px;
@@ -311,7 +305,67 @@ footer {
 .past-description {
     text-align: center;
     padding-bottom: 20px;
-    font-size: 12px;
+}
+.past-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+}
+
+.switzerland-pic {
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(rgb(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("./assets/images/switzerland-2017.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.switzerland-pic h2 {
+    font-size: 30px;
+    font-family: 'cocogoose', sans-serif;
+    margin-top: 15%;
+
+}
+.switzerland-pic > * {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mexico-pic {
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(rgb(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("./assets/images/mexico-2019.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.mexico-pic h2 {
+    font-size: 30px;
+    font-family: 'cocogoose', sans-serif;
+    margin-top: 15%;
+
+}
+.mexico-pic > * {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -332,7 +386,10 @@ footer {
     .fab {
         color: white;
     }
+.footer-content {
+    font-size: 14px;
 
+}
     .first-navbar {
         background-color: #272a31;
         height: 40px;
@@ -340,6 +397,9 @@ footer {
         align-items: center;
         justify-content: center;
         border: 1px #272a31 solid;
+    }
+    .past-description {
+        font-size: 12px;
     }
 
     .first-navbar ul {
@@ -405,6 +465,15 @@ footer {
     }
     .intro-sect h3 {
         font-size: 2rem;
+    }
+    .intro-about {
+        font-size: 14px;
+    }
+    .contact-us {
+        font-size: 14px;
+    }
+    .email {
+        font-size: 12px;
     }
 
     /* Featured Filmmakers Section */
@@ -477,6 +546,59 @@ footer {
         width: 60%;
         margin: auto;
         font-size: 14px;
+    }
+
+    .past-images {
+        flex-direction: row;
+        margin: auto;
+        width: 65%;
+    }
+    .switzerland-pic {
+        height: 250px;
+        width: 100%;
+        background: linear-gradient(rgb(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("./assets/images/switzerland-2017.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .switzerland-pic h2 {
+        font-size: 30px;
+        font-family: 'cocogoose', sans-serif;
+        margin-top: 15%;
+    
+    }
+    .switzerland-pic > * {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mexico-pic {
+        height: 250px;
+        width: 100%;
+        background: linear-gradient(rgb(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("./assets/images/mexico-2019.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .mexico-pic h2 {
+        font-size: 30px;
+        font-family: 'cocogoose', sans-serif;
+        margin-top: 15%;
+    
+    }
+    .mexico-pic > * {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
