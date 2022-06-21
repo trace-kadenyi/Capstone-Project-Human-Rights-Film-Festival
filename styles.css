@@ -1,6 +1,12 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nanum+Gothic:wght@700&family=Open+Sans&display=swap'); */
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Nanum+Gothic:wght@700&family=Open+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 .fa-bars {
     color: black;
@@ -9,7 +15,7 @@
 
 .heading-intro {
     font-size: 25px;
-    color: rgb(255, 79, 56);
+    color: #ec5242;
     margin-bottom: 10px;
 }
 .intro-sect {
@@ -17,30 +23,32 @@
     margin-left: 20px;    
     margin-right: 20px;
     margin-bottom: 100px;
-    font-family: sans-serif;
 }
 
 .intro-sect h2 {
-    font-weight: 900;
-    color: rgb(255, 79, 56);
+    color: #ec5242;
+    font-family: "cocogoose", serif;
 }
 .intro-description {
     margin-top: 30px;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
+    width: 70%;
+    font-size: 14px;
+    color: #272a31;
+    /* font-weight: bold; */
 }
 .intro-sect h3 {
     margin-top: 30px;
     font-weight: bold;
     font-size: 20px;
     font-family: Verdana;
-    color: rgb(87, 87, 87);
+    color: #272a31;
     font-weight: bold;
+    font-family: "cocogoose", serif;
 }
 .intro-sect h4 {
     margin-top: 10px;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
+    color: #272a31;
+    /* font-weight: bold; */
 }
 
 .first-page {
@@ -53,28 +61,28 @@
     left: 0;
     bottom: 0;
     right: 0;
+    background-color: #d3d3d3;
 }
 
 /* Programs Section */
 .programs-sect {
-    background-color: rgb(39, 42, 50);
+    background-color: #272a31;
     margin-top: 0;
     background: url("./assets/images/programs-bg.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 1px black solid;
+    border: 1px #272a31 solid;
 }
 .main-program {
     text-align: center;
     margin-top: 30px;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
+    color: #d3d3d3;
     letter-spacing: 0.25rem;
 }
 
 .under-line {
-    border: 1px rgb(239, 81, 60) solid;
+    border: 1px #ec5242 solid;
     width: 60px;
     text-align: center;
     margin: 20px auto;
@@ -99,14 +107,13 @@
     margin-right: 15px;
 }
 .program-activities h4 {
-    font-size: 18px;
-    color: rgb(239, 81, 60);
+    font-size: 16px;
+    color: #ec5242;
     box-sizing: border-box;
-    font-family: 'Nanum Gothic', sans-serif;
 }
 .program-activities p {
     box-sizing: border-box;
-    font-family: 'Nanum Gothic', sans-serif;
+    color: #d3d3d3;
 }
 .whole-program {
     margin-bottom: 50px;
@@ -118,20 +125,17 @@
 }
 /* Partners' Section */
 .partner-sect {
-    background-color: rgb(44, 41, 41);
+    background-color: #272a31;
     min-height: 200px;
-    /* display: flex; */
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    border: 1px black solid;
+    border: 1px #272a31 solid;
 }
 
 .partner-heading {
     text-align: center;
     margin-top: 40px;
     font-size: 30px;
-    font-family: 'Nanum Gothic', sans-serif;
     letter-spacing: 0.25rem;
     color: grey;
 }
@@ -156,40 +160,39 @@
 /* Footer Section */
 .footer-sect {
     min-height: 120px;
-    /* align-items: center; */
-    /* justify-content: center; */
-    margin: 20px;
-    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #d3d3d3;
 }
 footer {
-    /* display: grid;
-    grid-template-columns: 30% 70%; */
     display: flex;
     align-items: center;
     justify-content: center; 
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 20px;
+
 }
 .capstone-logo {
     width: 120px;
 }
 
 .footer-content {
-  /* float: right;
-  width: 60%;
-  margin-top: 20px; */
   margin-top: 20px;
   align-self: flex-start;
-  /* text-align: center; */
+  font-size: 14px;
 }
 
-
-
 /* Featured Section */
+.featured-sect {
+    background-color: #d3d3d3;
+    border: 2px #d3d3d3 solid;
+}
 .speakers-sect {
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .speaker-image {
@@ -212,7 +215,6 @@ footer {
 .featured-heading {
     text-align: center;
     margin-top: 30px;
-    font-family: 'Nanum Gothic', sans-serif;
     letter-spacing: 0.15rem;
     color: rgb(42, 41, 41);
 }
@@ -220,45 +222,231 @@ footer {
     margin: 30px auto;
     display: grid;
     grid-template-columns: 40% 60%;
-    font-family: 'Nanum Gothic', sans-serif;
     max-width: 500px;
 }
 
-
 .title {
-    color: rgb(255, 79, 56);
+    color: #ec5242;
     margin-top: 10px;
     margin-bottom: 10px;
     font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
 }
 .speaker-profile {
     padding-right: 5px;
+}
+.speaker-profile h4 {
+    color: #272a31;
+}
+.speaker-profile p {
+    font-size: 14px;
 }
 .feature-line {
     width: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.desktop-nav {
+    display: none;
+}
+.desktop-logo-info {
+    display: none;
+}
+.intro-sect-about {
+    text-align: center;
+    padding: 5%;
+}
+.intro-sect-about h2 {
+    color: #ec5242;
+    padding-bottom: 10px;
+    
+
+}
+.intro-about {
+    background-color: white;
+    color: #272a31;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+.contact-us {
+    font-size: 14px;
+}
+.desktop-intro-about {
+    display: none;
+}
+.footer-sect-about {
+    text-align: center;
+    color: #272a31;
+    padding: 10px;
+    margin-top: 20px;
+}
+.footer-sect-about h5 {
+    font-size: 1.2rem;
+}
+.about-logo {
+    border: 1px #d3d3d3 solid;
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto 50px;
+    justify-content: center;
+    min-height: 120px;
+}
+.email {
+    font-weight: bold;
+    font-size: 12px;
+}
+.past-acts {
+    margin: 10px;
+}
+.past-title {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.past-description {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
 
 
 
 @media screen and (min-width: 768px) {
+    .desktop-nav {
+        display: block;
+    }
+    .header-sect {
+        display: none;
+    }
+    .desktop-intro-about {
+        display: block;
+    }
+    .desktop-logo-info {
+        display: block;
+    }
+    .fab {
+        color: white;
+    }
+
+    .first-navbar {
+        background-color: #272a31;
+        height: 40px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        border: 1px #272a31 solid;
+    }
+
+    .first-navbar ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 85%;
+        margin-top: 10px;
+    }
+    .first-navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .second-navbar {
+        background-color: #fff;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        border: 1px #d3d3d3 solid;
+    }
+    .second-navbar img {
+        padding-left: 100px;
+    }
+    .nav-logo {
+        width: 80px;
+    }
+    .second-navbar ul {
+        display: flex;
+        list-style: none;
+        margin-top: 10px;
+        align-items: center;
+        padding-right: 110px;
+
+    }
+    .second-navbar li {
+        padding: 10px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .second-navbar a {
+        text-decoration: none;
+        color: #272a31;
+    }
+    .last-list-item a {
+        color: #ec5242;
+        border: 4px #ec5242 solid;
+        padding: 8px;
+    }
+    
+    .intro-sect {
+        margin: 10% 20%;
+    }
+    .intro-sect h2 {
+        font-size: 3.5rem;
+    }
+    .intro-description {
+        font-size: 14px;
+        width: 60%;
+        font-weight: 400;
+    }
+    .intro-sect h3 {
+        font-size: 2rem;
+    }
+
     /* Featured Filmmakers Section */
     .speakers-sect {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: -20px;
+    }
+    .speaker-profile p {
+        font-size: 12px;
     }
     .speaker-segment {
         flex: 45%;
         grid-template-columns: 38% 62%;
     }
+    /* Program Section */
+    .program-activities ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .program-activities li {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        height: 230px;
+        width: 15%;
+        gap: 15px;
+       text-align: center;
+    }
+    .fa-comments {
+        margin-top: 10px;
+    }
+   
+    .program-activities h4 {
+        margin: 5px;
+    }
 
     /* Partners' Section */
     .partner-images-sect {
-        /* padding: 20px; */
         display: flex;
         flex-wrap: nowrap;
         gap: 20px;
@@ -267,7 +455,46 @@ footer {
         width: 100px;
         padding: 10px;
         max-height: 110px;
-        /* flex: 35%; */
     }
 
+    /* About Section */
+
+    .intro-sect-about {
+        width: 70%;
+        margin: auto;
+    }
+    .intro-sect-about h2 {
+        font-size: 2.5rem;
+        font-family: 'cocogoose', sans-serif;
+    }
+    .second-navbar a:active {
+        color: #ec5242;
+    }
+    .about-logo {
+        width: 40%;
+    }
+    .footer-sect-about p {
+        width: 60%;
+        margin: auto;
+        font-size: 14px;
+    }
 }
+
+@media screen and (min-width: 1024px) {
+    .speakers-sect {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .program-activities li {
+        height: 180px;
+    }
+    .second-navbar ul {
+        padding-right: 170px;
+     }
+     .second-navbar li {
+        padding: 20px;
+     }
+}
+
+
+
