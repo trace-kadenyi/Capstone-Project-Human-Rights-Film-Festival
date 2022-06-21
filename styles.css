@@ -120,18 +120,32 @@
 .partner-sect {
     background-color: rgb(44, 41, 41);
     min-height: 200px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    border: 1px black solid;
 }
-.partner-sect h5 {
-    color: white;
+
+.partner-heading {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 0.25rem;
+    color: grey;
+}
+.partner-images-sect {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .partner-sect img {
     width: 150px;
     padding: 10px;
     max-height: 110px;
+    flex: 25%;
 }
 .first-img {
     margin-top: 15px;
@@ -142,27 +156,42 @@
 /* Footer Section */
 .footer-sect {
     min-height: 120px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     margin: 20px;
+    /* display: flex; */
+}
+footer {
+    /* display: grid;
+    grid-template-columns: 30% 70%; */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
 }
 .capstone-logo {
     width: 120px;
 }
 
 .footer-content {
-  float: right;
+  /* float: right;
   width: 60%;
+  margin-top: 20px; */
   margin-top: 20px;
+  align-self: flex-start;
+  /* text-align: center; */
 }
+
+
+
 /* Featured Section */
-.speaker-image img {
-    width: 120px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 10px;
-    height: 150px;
+.speakers-sect {
+    display: flex;
+    flex-direction: column;
 }
+
 .speaker-image {
     background-image: url('./assets/images/box-pattern.webp');
     background-position: top left;
@@ -171,6 +200,15 @@
     height: 90px;
     margin-left: 5px;
 }
+
+.speaker-image img {
+    width: 120px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 150px;
+}
+
 .featured-heading {
     text-align: center;
     margin-top: 30px;
@@ -179,12 +217,13 @@
     color: rgb(42, 41, 41);
 }
 .speaker-segment {
-    margin: 50px auto;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: 40% 60%;
     font-family: 'Nanum Gothic', sans-serif;
     max-width: 500px;
 }
+
 
 .title {
     color: rgb(255, 79, 56);
@@ -200,11 +239,35 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.partner-heading {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 30px;
-    font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing: 0.25rem;
-    color: grey;
+
+
+
+@media screen and (min-width: 768px) {
+    /* Featured Filmmakers Section */
+    .speakers-sect {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: -20px;
+    }
+    .speaker-segment {
+        flex: 45%;
+        grid-template-columns: 38% 62%;
+    }
+
+    /* Partners' Section */
+    .partner-images-sect {
+        /* padding: 20px; */
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    .partner-sect img {
+        width: 100px;
+        padding: 10px;
+        max-height: 110px;
+        /* flex: 35%; */
+    }
+
 }
