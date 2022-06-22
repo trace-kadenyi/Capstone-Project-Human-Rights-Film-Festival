@@ -34,11 +34,10 @@
             <div>
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Program</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Sponsor</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#about-logo-section">Logo</a></li>
+                    <li><a href="#past-projects-section">Past Events</a></li>
+                    <li><a href="#partners-section">Partner</a></li>
                     <li class="last-list-item"><a href="#">HR Campaign</a></li>
 
                 </ul>
@@ -48,7 +47,7 @@
     </section>
     <section class="first-page">
         <header class="header-sect">
-            <a href="#"><i class="fas fa-bars fa-2xl"></i></a>
+            <a href="#"><i class="fas fa-bars fa-2xl" id="hamburger-menu"></i></a>
         </header>
         <article class="intro-sect-about">
             <h2>ECHO INTERNATIONAL</h2>
@@ -65,8 +64,8 @@
         </article>
     </section>
    
-<!-- Footer Section -->
-    <section class="footer-sect-about">
+<!-- Footer About Section -->
+    <section class="footer-sect-about" id="about-logo-section">
         <div>
             <h5>Echo International Human Rights Film Festival 2022 Logo</h5>
             <hr class="under-line">
@@ -78,18 +77,17 @@
         </div>
     </section>
     <hr>
-    <section class="past-acts">
+    <!-- Past Project Section -->
+    <section class="past-acts" id="past-projects-section">
     <p class="past-title">See the past Echo Festivals</p>
     <hr class="under-line">
     <p class="past-description">Below are images from 2017's and 2019's International Human Rights Film Festival.</p>
     <div class="past-images">
         <div class="switzerland-pic">
-            <!-- <img src="./assets/images/switzerland-2017.jpeg" alt="Switzerland in 2017" /> -->
             <h2>2017</h2>
             <p>Echo Festival 2017 in Switzerland</p>
         </div>
         <div class="mexico-pic">
-            <!-- <img src="./assets/images/mexico-2019.jpg" alt="Mexico in 2019" /> -->
             <h2>2019</h2>
             <p>Echo Festival 2019 in Mexico</p>
         </div>
@@ -97,7 +95,7 @@
     </div>
 </section>
     <!-- Partners' Section -->
-    <section class="partner-sect">
+    <section class="partner-sect" id="partners-section">
         <h2 class="partner-heading">Partner</h2>
         <hr class="under-line">
         <div class="partner-images-sect">
@@ -118,6 +116,24 @@
         </footer>
     </section>
 
+    <!-- Menu Overlay -->
+    <section class="menu-overlay">
+        <div id="menu-bar-overlay">
+            <div class="menu-icon">
+              <i class="fa-solid fa-xmark fa-2xl" id="close-menu-item"></i>
+            </div>
+            <nav class="menu-overlay-nav">
+              <ul>
+                <li class="menu-options"><a href="homepage.html">Home</a></li>
+                <li class="menu-options"><a href="#about-logo-section">Logo</a></li>
+                <li class="menu-options"><a href="#past-projects-section">Past Events</a></li>
+                <li class="menu-options"><a href="#partners-section">Partner</a></li>
+              </ul>
+            </nav>
+          </div>
+    </section>
+
+    <script src="scripts/about.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"); */
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nanum+Gothic:wght@700&family=Open+Sans&display=swap'); */
 @import url("http://fonts.cdnfonts.com/css/cocogoose");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Nanum+Gothic:wght@700&family=Open+Sans&display=swap');
 
@@ -32,9 +30,9 @@
 .intro-description {
     margin-top: 30px;
     width: 70%;
-    font-size: 14px;
+    font-size: 16px;
     color: #272a31;
-    /* font-weight: bold; */
+    font-family: sans-serif;
 }
 .intro-sect h3 {
     margin-top: 30px;
@@ -48,11 +46,10 @@
 .intro-sect h4 {
     margin-top: 10px;
     color: #272a31;
-    /* font-weight: bold; */
 }
 
 .first-page {
-    border: 1px gray solid;
+    border: 1px transparent solid;
     background: linear-gradient(rgba(252, 252, 252, 0.7), rgba(185, 180, 180, 0.7)), url("./assets/images/home1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -72,7 +69,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 1px #272a31 solid;
+    border: 1px transparent solid;
 }
 .main-program {
     text-align: center;
@@ -102,7 +99,7 @@
     align-items: center;
 }
 
-.fa-comments {
+.comments {
     margin-left: 5px;
     margin-right: 15px;
 }
@@ -114,14 +111,35 @@
 .program-activities p {
     box-sizing: border-box;
     color: #d3d3d3;
+    font-family: sans-serif;
 }
 .whole-program {
     margin-bottom: 50px;
     margin-top: 50px;
     text-align: center;
+    border: 1px #ec5242 solid;
+    width: 60%;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ec5242;
 }
+
 .whole-program a {
     color: white;
+    text-decoration: none;
+}
+.more {
+    border: 1px #272a31 solid;
+    padding: 20px;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    font-weight: bold;
+}
+.more-btn {
+    color: #ec5242;
+    margin-left: 10px;
 }
 /* Partners' Section */
 .partner-sect {
@@ -129,7 +147,7 @@
     min-height: 200px;
     justify-content: center;
     align-items: center;
-    border: 1px #272a31 solid;
+    border: 1px transparent solid;
 }
 
 .partner-heading {
@@ -159,7 +177,7 @@
 }
 /* Footer Section */
 .footer-sect {
-    min-height: 120px;
+    min-height: 140px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -181,6 +199,7 @@ footer {
 .footer-content {
   margin-top: 20px;
   align-self: flex-start;
+  font-family: sans-serif;
 }
 
 /* Featured Section */
@@ -191,7 +210,7 @@ footer {
 .speakers-sect {
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .speaker-image {
@@ -239,7 +258,8 @@ footer {
     color: #272a31;
 }
 .speaker-profile p {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 .feature-line {
     width: 25px;
@@ -269,7 +289,8 @@ footer {
     margin-bottom: 20px;
     line-height: 1.5rem;
     text-align: center;
-    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 18px;
 }
 .desktop-intro-about {
     display: none;
@@ -279,6 +300,7 @@ footer {
     color: #272a31;
     padding: 10px;
     margin-top: 20px;
+    font-size: 18px;
 }
 .footer-sect-about h5 {
     font-size: 1.2rem;
@@ -368,6 +390,46 @@ footer {
     justify-content: center;
 }
 
+#menu-bar-overlay {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(162, 163, 165, 0.8);
+    backdrop-filter: blur(4px);
+    display: none;
+    transition: 0.3s;
+    padding: 20px;
+}
+.menu-icon {
+    padding: 30px;
+}
+.menu-overlay-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 70%;
+}
+.menu-overlay-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+  }
+  .menu-overlay-nav a {
+    text-decoration: none;
+    color: #272a31;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .contact-us {
+    font-size: 16px;
+    font-family: sans-serif;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -383,8 +445,14 @@ footer {
     .desktop-logo-info {
         display: block;
     }
+    .more {
+        display: none;
+    }
     .fab {
         color: white;
+    }
+    .menu-overlay {
+        display: none !important;
     }
 .footer-content {
     font-size: 14px;
@@ -421,7 +489,7 @@ footer {
         display: flex;
         justify-content: space-between;
         margin: auto;
-        border: 1px #d3d3d3 solid;
+        border: 1px transparent solid;
     }
     .second-navbar img {
         padding-left: 100px;
@@ -482,6 +550,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding-bottom: 50px;
     }
     .speaker-profile p {
         font-size: 12px;
@@ -506,7 +575,7 @@ footer {
         gap: 15px;
        text-align: center;
     }
-    .fa-comments {
+    .comments {
         margin-top: 10px;
     }
    
