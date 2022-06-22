@@ -316,6 +316,7 @@ footer {
   font-family: sans-serif;
   font-size: 18px;
 }
+
 .about-under-line {
   border: 1px #d3d3d3 solid;
 }
@@ -763,6 +764,7 @@ footer {
   .second-navbar li {
     padding: 20px;
   }
+
   .intro-sect h2 {
     font-size: 4rem;
   }
