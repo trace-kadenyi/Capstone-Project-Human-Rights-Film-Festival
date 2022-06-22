@@ -1,4 +1,3 @@
-@import url("http://fonts.cdnfonts.com/css/cocogoose");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Nanum+Gothic:wght@700&family=Open+Sans&display=swap');
 
 * {
@@ -27,8 +26,7 @@
 
 .intro-sect h2 {
   color: #ec5242;
-  font-family: "cocogoose", serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .intro-description {
@@ -44,7 +42,6 @@
   font-weight: bold;
   font-size: 20px;
   color: #272a31;
-  font-family: "cocogoose", serif;
 }
 
 .intro-sect h4 {
@@ -390,7 +387,6 @@ footer {
 
 .switzerland-pic h2 {
   font-size: 30px;
-  font-family: 'cocogoose', sans-serif;
   margin-top: 15%;
 }
 
@@ -417,7 +413,6 @@ footer {
 
 .mexico-pic h2 {
   font-size: 30px;
-  font-family: 'cocogoose', sans-serif;
   margin-top: 15%;
 }
 
@@ -673,7 +668,6 @@ footer {
 
   .intro-sect-about h2 {
     font-size: 2.5rem;
-    font-family: 'cocogoose', sans-serif;
   }
 
   .second-navbar a:active {
@@ -707,7 +701,6 @@ footer {
 
   .switzerland-pic h2 {
     font-size: 30px;
-    font-family: 'cocogoose', sans-serif;
     margin-top: 15%;
   }
 
@@ -734,7 +727,6 @@ footer {
 
   .mexico-pic h2 {
     font-size: 30px;
-    font-family: 'cocogoose', sans-serif;
     margin-top: 15%;
   }
 
@@ -753,6 +745,10 @@ footer {
     padding-right: 10%;
   }
 
+  .intro-sect-about h2 {
+    font-size: 3.5rem;
+  }
+
   .program-activities li {
     height: 180px;
   }
@@ -766,6 +762,6 @@ footer {
   }
 
   .intro-sect h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 }
