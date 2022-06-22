@@ -219,7 +219,7 @@ footer {
 /* Featured Section */
 .featured-sect {
   background-color: #d3d3d3;
-  border: 2px #d3d3d3 solid;
+  border: 2px transparent solid;
 }
 
 .speakers-sect {
