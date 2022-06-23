@@ -433,7 +433,7 @@ footer {
   top: 0;
   left: 0;
   background-color: rgba(162, 163, 165, 0.8);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
   display: none;
   transition: 0.3s;
   padding: 20px;
@@ -618,6 +618,7 @@ footer {
   }
 
   .speaker-segment {
+    margin: 40px auto;
     flex: 45%;
     grid-template-columns: 38% 62%;
   }
