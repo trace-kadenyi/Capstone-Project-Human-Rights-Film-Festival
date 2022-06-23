@@ -1,20 +1,21 @@
 const featuredFilmmakers = [
   {
     id: 1,
-    name: 'Sam Morley',
-    title: 'Human rights activist and filmmaker from Australia',
-    description: 'Sam uses his talent as a filmmaker to advocate for a better quality of life within indigenous communities in Australia.',
-    featured_image: './assets/images/feature-1.jpg',
-    alt_message: 'Sam Morley - Filmmaker One',
-  },
-  {
-    id: 2,
     name: 'Khensani Zulu',
     title: 'Human rights activist from South Africa',
     description: 'Khensani is an award-winning filmmaker who has made over twenty films to enlighten society on gender and sexual based violence in Africa.',
-    featured_image: './assets/images/feature-2.jpg',
-    alt_message: 'Khensani Zulu - Filmmaker Two',
+    featured_image: './assets/images/feature-1.jpg',
+    alt_message: 'Khensani Zulu - Filmmaker One',
   },
+  {
+    id: 2,
+    name: 'Sam Morley',
+    title: 'Human rights activist and filmmaker from Australia',
+    description: 'Sam uses his talent as a filmmaker to advocate for a better quality of life within indigenous communities in Australia.',
+    featured_image: './assets/images/feature-2.jpg',
+    alt_message: 'Sam Morley - Filmmaker Two',
+  },
+
   {
     id: 3,
     name: 'Miguel Rodriguez',

@@ -116,7 +116,8 @@
 .program-activities p {
   box-sizing: border-box;
   color: #d3d3d3;
-  font-family: sans-serif;
+
+  /* font-family: sans-serif; */
 }
 
 .whole-program {
@@ -212,7 +213,8 @@ footer {
 .footer-content {
   margin-top: 20px;
   align-self: flex-start;
-  font-family: sans-serif;
+
+  /* font-family: sans-serif; */
 }
 
 /* Featured Section */
@@ -276,7 +278,7 @@ footer {
 }
 
 .speaker-profile p {
-  font-size: 16px;
+  font-size: 14px;
   font-family: sans-serif;
 }
 
@@ -466,9 +468,38 @@ footer {
   font-weight: 700;
 }
 
+.menu-overlay-nav a:hover {
+  color: #ec5242;
+  font-weight: bold;
+  text-decoration-line: overline;
+}
+
 .contact-us {
   font-size: 16px;
   font-family: sans-serif;
+}
+
+@media screen and (max-width: 300px) {
+  .speaker-image img {
+    float: left;
+  }
+
+  .speaker-segment {
+    display: block;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .program-activities h4 {
+    font-size: 13px;
+  }
+
+  .program-activities p {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -534,15 +565,12 @@ footer {
 
   .second-navbar {
     background-color: #fff;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    align-items: center;
+    margin-left: 100px;
     border: 1px transparent solid;
-  }
-
-  .second-navbar img {
-    padding-left: 100px;
   }
 
   .nav-logo {
