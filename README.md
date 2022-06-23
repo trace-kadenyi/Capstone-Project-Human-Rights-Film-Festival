@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-Website Link - Check out the website on this [Link](https://track92.github.io/Capstone-Project-Human-Rights-Film-Festival/)
+Website Link - Check out the website on this [Live Link Demo](https://track92.github.io/Capstone-Project-Human-Rights-Film-Festival/)
 
 
 ## Authors
