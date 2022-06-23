@@ -193,6 +193,7 @@
   justify-content: center;
   display: flex;
   background-color: #d3d3d3;
+  padding: 20px;
 }
 
 footer {
