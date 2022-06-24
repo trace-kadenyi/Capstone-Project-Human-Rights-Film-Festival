@@ -222,6 +222,14 @@ footer {
   /* font-family: sans-serif; */
 }
 
+.about-footer {
+  background-color: #272a31;
+}
+
+.about-footer-content {
+  color: #d3d3d3;
+}
+
 /* Featured Section */
 .featured-sect {
   background-color: #d3d3d3;
@@ -367,7 +375,7 @@ footer {
 
 .past-title {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
   font-size: 1.5rem;
 }
 
@@ -382,7 +390,7 @@ footer {
   align-items: center;
   justify-content: center;
   width: 80%;
-  margin: auto;
+  margin: 20px auto 40px;
   gap: 20px;
 }
 
@@ -623,11 +631,6 @@ footer {
 
   .intro-sect h2 {
     font-size: 3.5rem;
-    background-image: url('./assets/images/3.png');
-    background-size: cover;
-    -webkit-background-clip: text;
-    color: #ec5242;
-    -webkit-text-fill-color: transparent;
   }
 
   .intro-description {
@@ -682,6 +685,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    margin: 2px;
     height: 230px;
     width: 15%;
     gap: 15px;
@@ -718,11 +722,6 @@ footer {
 
   .intro-sect-about h2 {
     font-size: 2.5rem;
-    background-image: url('./assets/images/3.png');
-    background-size: cover;
-    -webkit-background-clip: text;
-    color: #ec5242;
-    -webkit-text-fill-color: transparent;
   }
 
   .second-navbar a:active {
@@ -747,7 +746,7 @@ footer {
 
   .past-images {
     flex-direction: row;
-    margin: auto;
+    margin: 40px auto 60px;
     width: 65%;
   }
 
@@ -812,11 +811,6 @@ footer {
 
   .intro-sect-about h2 {
     font-size: 3.5rem;
-    background-image: url('./assets/images/3.png');
-    background-size: cover;
-    -webkit-background-clip: text;
-    color: #ec5242;
-    -webkit-text-fill-color: transparent;
   }
 
   .program-activities li {
@@ -833,10 +827,5 @@ footer {
 
   .intro-sect h2 {
     font-size: 4.5rem;
-    background-image: url('./assets/images/3.png');
-    background-size: cover;
-    -webkit-background-clip: text;
-    color: #ec5242;
-    -webkit-text-fill-color: transparent;
   }
 }
