@@ -148,6 +148,11 @@
   font-weight: bold;
 }
 
+.more:hover {
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
 .more-btn {
   color: #ec5242;
   margin-left: 10px;
@@ -218,8 +223,6 @@ footer {
 .footer-content {
   margin-top: 20px;
   align-self: flex-start;
-
-  /* font-family: sans-serif; */
 }
 
 .about-footer {
@@ -303,6 +306,26 @@ footer {
 
 .desktop-nav {
   display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.more-down {
+  color: #ec5242;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.more-down:hover {
+  width: 50px;
+  color: green;
+}
+
+.more-down:active {
+  color: #ec5242;
 }
 
 .desktop-logo-info {
@@ -460,6 +483,10 @@ footer {
   padding: 20px;
 }
 
+#close-menu-item {
+  cursor: pointer;
+}
+
 .menu-icon {
   padding: 30px;
 }
@@ -515,6 +542,10 @@ footer {
     font-size: 13px;
   }
 
+  .more {
+    display: none;
+  }
+
   .program-activities p {
     font-size: 14px;
     font-family: 'Lato', sans-serif;
@@ -524,6 +555,10 @@ footer {
 @media screen and (min-width: 768px) {
   .desktop-nav {
     display: block;
+  }
+
+  .hide {
+    display: grid;
   }
 
   .header-sect {

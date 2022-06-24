@@ -26,6 +26,7 @@ const featuredFilmmakers = [
   },
   {
     id: 4,
+    class: 'hide',
     name: 'Elizabeth Brown',
     title: "Children's rights advocate from USA",
     description: "Elizabeth's passion for the safety and wellbeing of children emanates through her films. Her work covers wide-ranging issues that impact the lives of children.",
@@ -34,6 +35,7 @@ const featuredFilmmakers = [
   },
   {
     id: 5,
+    class: 'hide',
     name: 'Shaban Mohammed',
     title: 'Equality rights activist from Britain',
     description: 'As a muslim refugee living in Britain, Shaban makes films whose themes focus on educating society on religious and racial discrimination, particularly against refugees.',
@@ -42,6 +44,7 @@ const featuredFilmmakers = [
   },
   {
     id: 6,
+    class: 'hide',
     name: 'Alexa Martin',
     title: 'Reproductive rights activist from Turkey',
     description: 'Alexa creates documentaries of real women and girls worldwide that have been denied their reproductive rights and the consequences to their lives.',
@@ -66,14 +69,14 @@ const speakerSect = document.createElement('div');
 speakerSect.classList.add('speakers-sect');
 featuredSect.appendChild(speakerSect);
 
-for (let i = 0; i < featuredFilmmakers.length; i += 1) {
+featuredFilmmakers.forEach((featuredFilmmaker) => {
   const speakerSegment = document.createElement('div');
-  speakerSegment.classList.add('speaker-segment');
+  speakerSegment.classList.add('speaker-segment', `${featuredFilmmaker.class}`);
   speakerSect.appendChild(speakerSegment);
 
   const speakerImage = document.createElement('div');
   speakerImage.classList.add('speaker-image');
-  speakerImage.innerHTML = `<img src="${featuredFilmmakers[i].featured_image}" alt="${featuredFilmmakers[i].alt_message}">`;
+  speakerImage.innerHTML = `<img src="${featuredFilmmaker.featured_image}" alt="${featuredFilmmaker.alt_message}">`;
   speakerSegment.appendChild(speakerImage);
 
   const speakerProfile = document.createElement('div');
@@ -81,12 +84,12 @@ for (let i = 0; i < featuredFilmmakers.length; i += 1) {
   speakerSegment.appendChild(speakerProfile);
 
   const headingFour = document.createElement('h4');
-  headingFour.innerHTML = `${featuredFilmmakers[i].name}`;
+  headingFour.innerHTML = `${featuredFilmmaker.name}`;
   speakerProfile.appendChild(headingFour);
 
   const paraOne = document.createElement('p');
   paraOne.classList.add('title');
-  paraOne.innerHTML = `${featuredFilmmakers[i].title}`;
+  paraOne.innerHTML = `${featuredFilmmaker.title}`;
   speakerProfile.appendChild(paraOne);
 
   const horitontalLine2 = document.createElement('hr');
@@ -94,16 +97,16 @@ for (let i = 0; i < featuredFilmmakers.length; i += 1) {
   speakerProfile.appendChild(horitontalLine2);
 
   const paraTwo = document.createElement('p');
-  paraTwo.innerHTML = `${featuredFilmmakers[i].description}`;
+  paraTwo.innerHTML = `${featuredFilmmaker.description}`;
   speakerProfile.appendChild(paraTwo);
-}
+});
 
 const moreSect = document.createElement('div');
 featuredSect.appendChild(moreSect);
 
 const paraThree = document.createElement('p');
 paraThree.classList.add('more');
-paraThree.innerHTML = 'MORE TO COME';
+paraThree.innerHTML = 'MORE <i class="fas fa-chevron-down fa-lg more-down"></i>';
 moreSect.appendChild(paraThree);
 
 // MENU BAR ON MOBILE
@@ -138,3 +141,18 @@ const openMenuOption = () => {
   });
 };
 openMenuOption();
+
+// 'MORE' Mobile Option
+const moreSegment = document.querySelector('.more');
+const moreButton = document.querySelector('.more-down');
+const moreOptions = document.querySelectorAll('.hide');
+
+const moreFilmmakerOptions = () => {
+  moreButton.addEventListener('click', () => {
+    moreOptions.forEach((moreOption) => {
+      moreOption.style.display = 'grid';
+    });
+    moreSegment.style.display = 'none';
+  });
+};
+moreFilmmakerOptions();
